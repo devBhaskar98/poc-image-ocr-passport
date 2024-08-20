@@ -1,0 +1,23 @@
+.video-container {
+    position: relative;
+    width: 80%; /* Set to your desired video width */
+    max-width: 100%; /* Ensure responsiveness */
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+  
+  .mrz-overlay {
+    position: absolute;
+    bottom: 5%; /* Adjust based on where you want the MRZ to appear */
+    left: 0;
+    right: 0;
+    height: 20%; /* Adjust this to cover the MRZ area */
+    border-top: 2px solid red; /* Top line of the MRZ overlay */
+    border-bottom: 2px solid red; /* Bottom line of the MRZ overlay */
+    opacity: 0.7; /* Make the overlay slightly transparent */
+    pointer-events: none; /* Ensure it doesn’t interfere with video controls */
+  }
